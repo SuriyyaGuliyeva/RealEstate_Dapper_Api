@@ -1,8 +1,31 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
+<!-- Slider -->
+@await Component.InvokeAsync("_DefaultFeatureViewComponentPartial")
 
-@await Component.InvokeAsync("_DefaultFeatureViewComponentPartial");
+<!-- Top Properties -->
+@await Component.InvokeAsync("_DefaultProductListViewComponentPartial")
+
+<!-- Who we are -->
+@await Component.InvokeAsync("_DefaultWhoWeAreViewComponentPartial")
+
+<!-- Services (Buy a home) -->
+@await Component.InvokeAsync("_DefaultServicesViewComponentPartial")
+
+<!-- Explore Cities -->
+@await Component.InvokeAsync("_DefaultExploreCitiesViewComponentPartial")
+
+<!-- Our Clients -->
+@await Component.InvokeAsync("_DefaultOurClientsViewComponentPartial")
+
+<!-- Sub Features -->
+@await Component.InvokeAsync("_DefaultSubFeatureViewComponentPartial")
+
+<!-- Tips and Advances -->
+@await Component.InvokeAsync("_DefaultDiscountOfDayViewComponentPartial")
+
+<!-- Brands -->
+@await Component.InvokeAsync("_DefaultBrandsViewComponentPartial")
